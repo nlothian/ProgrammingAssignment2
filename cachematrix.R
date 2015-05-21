@@ -148,7 +148,8 @@ cacheSolve <- function(x, ...) {
                     matrix()
                     
                 } else {
-                    solve(inputMatrix)
+                    # make sure to pass additional arguments to solve
+                    solve(inputMatrix,...)
                 }
             }, error = function(err) {
                 message("Could not invert matrix. Error is:")
