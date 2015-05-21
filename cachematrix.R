@@ -35,8 +35,7 @@ makeCacheMatrix <- function(x = matrix()) {
             stop("Argument must be a matrix")
         } else if (nrow(input) != ncol(input)) {
             stop("Argument must be a square matrix")
-        }
-            
+        }            
     }         
 
     # Perform validation using the validate function defined above
@@ -146,10 +145,10 @@ cacheSolve <- function(x, ...) {
                     # 
                     # See https://class.coursera.org/rprog-014/forum/thread?thread_id=569
                     #
-                    return (matrix())                        
+                    matrix()
                     
                 } else {
-                    return (solve(inputMatrix))
+                    solve(inputMatrix)
                 }
             }, error = function(err) {
                 message("Could not invert matrix. Error is:")

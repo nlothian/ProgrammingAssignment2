@@ -11,6 +11,8 @@ if (!isTRUE(all.equal(inverted, solvedInput))) {
 } else {
     message("Passed: Basic Test")
 }
+inverted <- cacheSolve(wrappedMatrix)
+
 
 input <- matrix(2:5,2,2)
 wrappedMatrix$Set(input)
